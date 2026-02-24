@@ -1,0 +1,5 @@
+export { CapacityTabContent } from './ui/CapacityTabContent'
+export { DestinationsTabContent } from './ui/DestinationsTabContent'
+export { InventoryCategoriesTabContent } from './ui/InventoryCategoriesTabContent'
+export { TermsAndConditionsTabContent } from './ui/TermsAndConditionsTabContent'
+export { default as SpecialPricesBody } from './ui/SpecialPricesBody'

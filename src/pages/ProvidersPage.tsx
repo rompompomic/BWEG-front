@@ -1,0 +1,220 @@
+
+import imgImage2 from "@/shared/assets/4083b5444961bcb8aa5871f500ad6e6ed65bdcb5.png";
+import { useNavigate } from 'react-router-dom';
+
+const svgPaths = {
+p13418300: "M4.03809 4.0201L4.03809 0L4.743 3.07517e-08L4.743 4.0201L4.03809 4.0201Z",
+p156cc700: "M3.4 4.4C3.24087 4.4 3.08826 4.46321 2.97574 4.57574C2.86321 4.68826 2.8 4.84087 2.8 5V11.8C2.8 12.1312 3.0688 12.4 3.4 12.4H10.2C10.3591 12.4 10.5117 12.3368 10.6243 12.2243C10.7368 12.1117 10.8 11.9591 10.8 11.8V8.6C10.8 8.44087 10.8632 8.28826 10.9757 8.17574C11.0883 8.06321 11.2409 8 11.4 8C11.5591 8 11.7117 8.06321 11.8243 8.17574C11.9368 8.28826 12 8.44087 12 8.6V11.8C12 12.2774 11.8104 12.7352 11.4728 13.0728C11.1352 13.4104 10.6774 13.6 10.2 13.6H3.4C2.92261 13.6 2.46477 13.4104 2.12721 13.0728C1.78964 12.7352 1.6 12.2774 1.6 11.8V5C1.6 4.52261 1.78964 4.06477 2.12721 3.72721C2.46477 3.38964 2.92261 3.2 3.4 3.2H7.4C7.55913 3.2 7.71174 3.26321 7.82426 3.37574C7.93679 3.48826 8 3.64087 8 3.8C8 3.95913 7.93679 4.11174 7.82426 4.22426C7.71174 4.33679 7.55913 4.4 7.4 4.4H3.4Z",
+p19e1b780: "M5.58744 0.722344C5.39578 0.433826 4.88932 -0.142663 4.01927 0.0324967C3.46843 0.143393 3.17719 0.478545 3.03662 0.80651C2.90296 1.11837 2.90732 1.4149 2.91082 1.49269L2.92665 1.68363C2.96291 2.12056 3.04404 3.09796 3.29732 4.47265C3.39845 5.02151 3.52437 5.56684 3.64375 6.08382C3.69658 6.31261 3.74813 6.53585 3.79568 6.75139C3.88264 7.14558 3.95651 7.51501 4.00525 7.85699L3.12372 6.98268C2.86999 6.73104 2.56408 6.47386 2.22215 6.30572C1.87676 6.13587 1.47753 6.04921 1.05838 6.17107C0.850645 6.23147 0.636955 6.33703 0.455362 6.51543C0.194782 6.77141 0.0762676 7.09367 0.0249183 7.37572C-0.0915293 8.01535 0.221629 8.59803 0.51898 9.03647C1.12117 9.92438 2.18907 11.5036 2.78006 12.4045C3.4229 13.3845 4.22045 14.0142 4.62063 14.2928C4.69521 14.3447 4.73399 14.4225 4.73399 14.4933V15.4511C4.73399 15.7543 4.97814 16 5.2793 16H8.74946C8.8973 16 9.02272 15.8906 9.04386 15.7433L9.04415 15.7414L9.04571 15.7314C9.04718 15.7222 9.04954 15.7079 9.05286 15.6895C9.0595 15.6524 9.06992 15.5985 9.08471 15.5335C9.11454 15.4024 9.16094 15.2312 9.22755 15.063C9.29538 14.8918 9.37721 14.7416 9.46996 14.6388C9.5595 14.5395 9.64057 14.503 9.72101 14.503C9.80247 14.503 9.88699 14.5405 9.98121 14.642C10.078 14.7463 10.1644 14.8977 10.237 15.0693C10.3083 15.238 10.3593 15.4096 10.3927 15.5409C10.4092 15.606 10.4211 15.6599 10.4288 15.697C10.4326 15.7156 10.4353 15.7298 10.437 15.7391L10.4389 15.7491L10.4392 15.7512C10.4637 15.8949 10.5875 16 10.7324 16H12.2196C12.5208 16 12.7649 15.7543 12.7649 15.4511V13.6177C12.7649 13.402 12.8228 13.1902 12.9325 13.0049L13.7733 11.5842C14.1181 11.0015 14.3209 10.3448 14.3648 9.66792L14.4578 8.23534L14.4583 8.22621L14.4998 7.02216C14.5001 7.01446 14.5001 7.00675 14.4997 6.99905L14.468 6.24856C14.4611 6.08421 14.4421 5.87603 14.3474 5.67817C14.2123 5.39594 13.8792 4.91798 13.2043 4.91798C12.8534 4.91798 12.5841 5.01749 12.3848 5.15213C12.3279 5.19055 12.2777 5.23336 12.2333 5.27926C12.1965 5.10202 12.1304 4.91318 12.0015 4.74746C11.7852 4.46942 11.3744 4.11866 10.7063 4.11866C10.1483 4.11866 9.74963 4.36429 9.49708 4.60301L9.48555 4.61407C9.29584 4.04048 8.66134 3.67503 8.00585 3.67503C7.38181 3.67503 6.77677 4.00627 6.55648 4.53299L5.76636 1.16715C5.73474 1.03244 5.68625 0.87108 5.58744 0.722344ZM8.50453 15.4012L8.50483 15.3999C8.53885 15.2503 8.59335 15.0473 8.67497 14.8413C8.75537 14.6383 8.8691 14.4142 9.02951 14.2363C9.19313 14.0549 9.42282 13.9043 9.72101 13.9043C10.0182 13.9043 10.2494 14.0539 10.4158 14.2331C10.5796 14.4095 10.6987 14.6323 10.7844 14.8349C10.8713 15.0405 10.9311 15.2431 10.969 15.3925L10.9712 15.4012H12.17V13.6177C12.17 13.2941 12.2569 12.9765 12.4214 12.6984L13.2622 11.2778C13.5589 10.7764 13.7334 10.2113 13.7712 9.62887L13.8639 8.20086L13.9049 7.01292L13.8737 6.27398C13.8675 6.12686 13.8512 6.02108 13.8115 5.93808C13.717 5.74066 13.5413 5.51676 13.2043 5.51676C12.9715 5.51676 12.8176 5.58092 12.7163 5.6493C12.6436 5.69841 12.5876 5.77608 12.5436 5.89556C12.4982 6.01879 12.473 6.16543 12.4508 6.33268L12.3928 6.76934C12.3729 6.91957 12.2446 7.0311 12.094 7.02905C11.9434 7.027 11.8181 6.91201 11.8022 6.76129L11.6778 5.58145C11.6559 5.37344 11.6154 5.22231 11.5331 5.11662C11.3923 4.93561 11.1386 4.71745 10.7063 4.71745C10.3368 4.71745 10.0771 4.87621 9.90432 5.03949C9.74945 5.18589 9.68025 5.42584 9.66239 5.73805L9.60467 6.7469C9.59554 6.90655 9.46336 7.0308 9.30449 7.02906C9.14562 7.02732 9.01616 6.90022 9.01047 6.7404L8.94794 4.98312L8.94779 4.97712L8.94775 4.9724C8.94775 4.64547 8.59142 4.27382 8.00585 4.27382C7.42029 4.27382 7.06395 4.64547 7.06395 4.9724V6.72969C7.06395 6.88163 6.95088 7.00948 6.80094 7.02707C6.651 7.04465 6.51175 6.9464 6.47704 6.79853L5.18742 1.30484C5.1616 1.19486 5.13296 1.11545 5.09292 1.05518C4.9469 0.835354 4.64576 0.517014 4.13594 0.619652C3.80396 0.686488 3.65772 0.869006 3.58284 1.0437C3.50107 1.2345 3.5033 1.42563 3.5051 1.46555L3.50614 1.47804C3.50993 1.519 3.5142 1.57048 3.51933 1.63214C3.55569 2.06965 3.63466 3.01979 3.88223 4.36346C3.98087 4.89883 4.1016 5.42156 4.21955 5.93222C4.23463 5.99752 4.2497 6.06274 4.26464 6.12766C4.30282 6.29358 4.34038 6.45821 4.37642 6.62159C4.53424 7.33697 4.66273 8.02678 4.66273 8.63439C4.66273 8.75508 4.59073 8.86397 4.48012 8.91057C4.36952 8.95716 4.24193 8.93236 4.15652 8.84765L2.70619 7.4092C2.47318 7.17811 2.22031 6.97123 1.96102 6.84373C1.7052 6.71793 1.46078 6.67734 1.22345 6.74634C1.08816 6.78568 0.967666 6.84885 0.870863 6.94395C0.726911 7.08536 0.647651 7.27716 0.610059 7.48365C0.539627 7.87052 0.723103 8.2754 1.0103 8.69887C1.61191 9.58594 2.68251 11.1691 3.2765 12.0746C3.86244 12.9678 4.59416 13.5463 4.95901 13.8003C5.17715 13.9522 5.32888 14.2059 5.32888 14.4933V15.4012H8.50453Z",
+p1a72f800: "M12 3.75C9.81196 3.75 7.71354 4.61919 6.16637 6.16637C4.61919 7.71354 3.75 9.81196 3.75 12C3.75 13.0834 3.96339 14.1562 4.37799 15.1571C4.79259 16.1581 5.40029 17.0675 6.16637 17.8336C6.93245 18.5997 7.84193 19.2074 8.84286 19.622C9.8438 20.0366 10.9166 20.25 12 20.25C13.0834 20.25 14.1562 20.0366 15.1571 19.622C16.1581 19.2074 17.0675 18.5997 17.8336 17.8336C18.5997 17.0675 19.2074 16.1581 19.622 15.1571C20.0366 14.1562 20.25 13.0834 20.25 12C20.25 9.81196 19.3808 7.71354 17.8336 6.16637C16.2865 4.61919 14.188 3.75 12 3.75ZM5.10571 5.10571C6.93419 3.27723 9.41414 2.25 12 2.25C14.5859 2.25 17.0658 3.27723 18.8943 5.10571C20.7228 6.93419 21.75 9.41414 21.75 12C21.75 13.2804 21.4978 14.5482 21.0078 15.7312C20.5178 16.9141 19.7997 17.9889 18.8943 18.8943C17.9889 19.7997 16.9141 20.5178 15.7312 21.0078C14.5482 21.4978 13.2804 21.75 12 21.75C10.7196 21.75 9.45176 21.4978 8.26884 21.0078C7.08591 20.5178 6.01108 19.7997 5.10571 18.8943C4.20034 17.9889 3.48216 16.9141 2.99217 15.7312C2.50219 14.5482 2.25 13.2804 2.25 12C2.25 9.41414 3.27723 6.93419 5.10571 5.10571ZM15.4359 9.1397C15.773 9.38046 15.8511 9.84887 15.6103 10.1859L11.8603 15.4359C11.7322 15.6153 11.5316 15.7293 11.3119 15.7474C11.0921 15.7656 10.8756 15.6862 10.7197 15.5303L8.46967 13.2803C8.17678 12.9874 8.17678 12.5126 8.46967 12.2197C8.76256 11.9268 9.23744 11.9268 9.53033 12.2197L11.1543 13.8436L14.3897 9.31407C14.6305 8.97701 15.0989 8.89894 15.4359 9.1397Z",
+p1c6bfa00: "M4.9552 10.2024C5.00807 10.2609 5.07195 10.3084 5.1432 10.3422C5.21444 10.376 5.29165 10.3954 5.37041 10.3994C5.44917 10.4033 5.52793 10.3917 5.60219 10.3652C5.67645 10.3386 5.74476 10.2977 5.8032 10.2448L13.2 3.552V5.8C13.2 5.95913 13.2632 6.11174 13.3757 6.22426C13.4883 6.33679 13.6409 6.4 13.8 6.4C13.9591 6.4 14.1117 6.33679 14.2243 6.22426C14.3368 6.11174 14.4 5.95913 14.4 5.8V2.2C14.4 2.04087 14.3368 1.88826 14.2243 1.77574C14.1117 1.66321 13.9591 1.6 13.8 1.6H10.2C10.0409 1.6 9.88826 1.66321 9.77574 1.77574C9.66321 1.88826 9.6 2.04087 9.6 2.2C9.6 2.35913 9.66321 2.51174 9.77574 2.62426C9.88826 2.73679 10.0409 2.8 10.2 2.8H12.2424L4.9976 9.3552C4.93909 9.40807 4.89158 9.47195 4.85778 9.5432C4.82398 9.61444 4.80456 9.69165 4.80062 9.77041C4.79668 9.84917 4.80831 9.92793 4.83483 10.0022C4.86136 10.0765 4.90226 10.144 4.9552 10.2024Z",
+p1e6d9c00: "M8.00585 3.97504C7.32139 3.97504 6.76651 4.42185 6.76651 4.97302V6.73031L5.47689 1.23661C5.44817 1.11427 5.40961 0.993884 5.34018 0.88938C5.17134 0.635211 4.76754 0.187796 4.07761 0.326694C3.19478 0.504428 3.20265 1.36203 3.20796 1.47974C3.20838 1.48895 3.20913 1.4972 3.20998 1.50639C3.24026 1.83408 3.30436 2.86955 3.58978 4.41867C3.87916 5.98933 4.36528 7.49174 4.36528 8.63501L2.91495 7.19656C2.42822 6.71382 1.79739 6.26847 1.14092 6.45933C0.9694 6.50919 0.802311 6.59356 0.663113 6.73031C0.460846 6.92901 0.361959 7.18603 0.317488 7.4303C0.224049 7.94355 0.472366 8.43733 0.76464 8.86829C1.36654 9.75578 2.43579 11.3369 3.02828 12.2402C3.64267 13.1768 4.40731 13.7809 4.78982 14.0471C4.93618 14.149 5.03144 14.3148 5.03144 14.4939V15.4517C5.03144 15.5895 5.14241 15.7012 5.2793 15.7012H8.74946C8.74946 15.7012 8.96375 14.2043 9.72101 14.2043C10.4783 14.2043 10.7324 15.7012 10.7324 15.7012H12.2196C12.3565 15.7012 12.4675 15.5895 12.4675 15.4517V13.6184C12.4675 13.3487 12.5399 13.084 12.677 12.8523L13.5177 11.4316C13.8385 10.8895 14.0271 10.2786 14.068 9.64902L14.161 8.21643L14.2026 7.01238L14.1709 6.26189C14.1643 6.10616 14.1467 5.94917 14.0794 5.80874C13.9646 5.56892 13.7102 5.21799 13.2043 5.21799C12.9125 5.21799 12.7008 5.29982 12.5506 5.40134C12.2695 5.59121 12.2008 5.95595 12.156 6.29365L12.098 6.73031L11.9736 5.55047C11.9503 5.3298 11.9033 5.10737 11.7673 4.93266C11.5888 4.70313 11.2565 4.41867 10.7063 4.41867C10.2425 4.41867 9.91334 4.62087 9.7007 4.82187C9.45967 5.04972 9.38445 5.38917 9.36544 5.72145L9.30772 6.73031L9.2452 4.97302C9.2452 4.42185 8.69032 3.97504 8.00585 3.97504Z",
+p210fc380: "M1.47456e-08 4.0201L1.90819e-07 0L0.704914 3.07517e-08L0.704914 4.0201L1.47456e-08 4.0201Z",
+p26e2b7f0: "M5.22 8.22C5.36063 8.07955 5.55125 8.00066 5.75 8.00066C5.94875 8.00066 6.13937 8.07955 6.28 8.22L10 11.94L13.72 8.22C13.7887 8.14631 13.8715 8.08721 13.9635 8.04622C14.0555 8.00523 14.1548 7.98319 14.2555 7.98141C14.3562 7.97963 14.4562 7.99816 14.5496 8.03588C14.643 8.0736 14.7278 8.12974 14.799 8.20096C14.8703 8.27218 14.9264 8.35701 14.9641 8.4504C15.0018 8.54379 15.0204 8.64382 15.0186 8.74452C15.0168 8.84522 14.9948 8.94454 14.9538 9.03654C14.9128 9.12854 14.8537 9.21134 14.78 9.28L10.53 13.53C10.3894 13.6705 10.1988 13.7493 10 13.7493C9.80125 13.7493 9.61063 13.6705 9.47 13.53L5.22 9.28C5.07955 9.13937 5.00066 8.94875 5.00066 8.75C5.00066 8.55125 5.07955 8.36063 5.22 8.22Z",
+p28ffe520: "M4.3464 11.1336L5.356 8.6096C5.51692 8.20751 5.75778 7.84227 6.064 7.536L11.6 2.0016C11.9183 1.68334 12.3499 1.50454 12.8 1.50454C13.2501 1.50454 13.6817 1.68334 14 2.0016C14.3183 2.31986 14.4971 2.75151 14.4971 3.2016C14.4971 3.65169 14.3183 4.08334 14 4.4016L8.464 9.936C8.1576 10.2424 7.792 10.484 7.3896 10.6448L4.8664 11.6544C4.79371 11.6835 4.71408 11.6906 4.63738 11.6749C4.56067 11.6592 4.49028 11.6213 4.43491 11.5659C4.37955 11.5105 4.34165 11.4401 4.32591 11.3634C4.31018 11.2867 4.3173 11.2071 4.3464 11.1344V11.1336Z",
+p2b4a67f0: "M2.8 4.6C2.8 4.048 3.248 3.6 3.8 3.6H8C8.15913 3.6 8.31174 3.53679 8.42426 3.42426C8.53679 3.31174 8.6 3.15913 8.6 3C8.6 2.84087 8.53679 2.68826 8.42426 2.57574C8.31174 2.46321 8.15913 2.4 8 2.4H3.8C3.21652 2.4 2.65695 2.63179 2.24437 3.04437C1.83179 3.45695 1.6 4.01652 1.6 4.6V12.2C1.6 12.7835 1.83179 13.3431 2.24437 13.7556C2.65695 14.1682 3.21652 14.4 3.8 14.4H11.4C11.9835 14.4 12.5431 14.1682 12.9556 13.7556C13.3682 13.3431 13.6 12.7835 13.6 12.2V8C13.6 7.84087 13.5368 7.68826 13.4243 7.57574C13.3117 7.46321 13.1591 7.4 13 7.4C12.8409 7.4 12.6883 7.46321 12.5757 7.57574C12.4632 7.68826 12.4 7.84087 12.4 8V12.2C12.4 12.752 11.952 13.2 11.4 13.2H3.8C3.248 13.2 2.8 12.752 2.8 12.2V4.6Z",
+p37493580: "M2.01496 4.0201L2.01496 0L2.71987 3.07517e-08L2.71987 4.0201L2.01496 4.0201Z",
+p38e5e800: "M7.20938 14.7698C6.92228 14.4713 6.93159 13.9965 7.23017 13.7094L11.1679 10L7.23017 6.29062C6.93159 6.00353 6.92228 5.52875 7.20938 5.23017C7.49647 4.93159 7.97125 4.92228 8.26983 5.20937L12.7698 9.45937C12.9169 9.60078 13 9.79599 13 10C13 10.204 12.9169 10.3992 12.7698 10.5406L8.26983 14.7906C7.97125 15.0777 7.49647 15.0684 7.20938 14.7698Z",
+p3ebf6d00: "M9 2.8125C9.31066 2.8125 9.5625 3.06434 9.5625 3.375V8.4375H14.625C14.9357 8.4375 15.1875 8.68934 15.1875 9C15.1875 9.31066 14.9357 9.5625 14.625 9.5625H9.5625V14.625C9.5625 14.9357 9.31066 15.1875 9 15.1875C8.68934 15.1875 8.4375 14.9357 8.4375 14.625V9.5625H3.375C3.06434 9.5625 2.8125 9.31066 2.8125 9C2.8125 8.68934 3.06434 8.4375 3.375 8.4375H8.4375V3.375C8.4375 3.06434 8.68934 2.8125 9 2.8125Z",
+p865e080: "M9 3.5C7.54131 3.5 6.14236 4.07946 5.11091 5.11091C4.07946 6.14236 3.5 7.54131 3.5 9C3.5 10.4587 4.07946 11.8576 5.11091 12.8891C6.14236 13.9205 7.54131 14.5 9 14.5C10.4587 14.5 11.8576 13.9205 12.8891 12.8891C13.9205 11.8576 14.5 10.4587 14.5 9C14.5 7.54131 13.9205 6.14236 12.8891 5.11091C11.8576 4.07946 10.4587 3.5 9 3.5ZM2 9C2.00009 7.88067 2.26861 6.77768 2.78303 5.78356C3.29745 4.78944 4.04276 3.93318 4.95645 3.2866C5.87015 2.64002 6.92557 2.22197 8.0342 2.06754C9.14282 1.9131 10.2723 2.02677 11.3279 2.39902C12.3836 2.77127 13.3345 3.39124 14.101 4.20692C14.8676 5.0226 15.4273 6.0102 15.7333 7.08689C16.0393 8.16358 16.0827 9.29795 15.8597 10.3949C15.6368 11.4918 15.154 12.5192 14.452 13.391L17.78 16.72C17.8537 16.7887 17.9128 16.8715 17.9538 16.9635C17.9948 17.0555 18.0168 17.1548 18.0186 17.2555C18.0204 17.3562 18.0018 17.4562 17.9641 17.5496C17.9264 17.643 17.8703 17.7278 17.799 17.799C17.7278 17.8703 17.643 17.9264 17.5496 17.9641C17.4562 18.0018 17.3562 18.0204 17.2555 18.0186C17.1548 18.0168 17.0555 17.9948 16.9635 17.9538C16.8715 17.9128 16.7887 17.8537 16.72 17.78L13.391 14.452C12.3625 15.2804 11.1207 15.8009 9.80901 15.9536C8.49727 16.1062 7.16912 15.8846 5.97795 15.3145C4.78677 14.7444 3.78117 13.849 3.07727 12.7316C2.37338 11.6143 1.99991 10.3206 2 9Z",
+} as const;
+
+export default function ProvidersPage() {
+  const navigate = useNavigate();
+  
+  const providers = Array(12).fill({
+    name: 'SIA "NIKA MI"',
+    logo: imgImage2,
+    isPinned: false,
+  }).map((provider, index) => ({
+    ...provider,
+    id: index + 1,
+    isPinned: index === 0, // Only first card is pinned
+  }));
+
+  return (
+    <div className="bg-[#fafafa] flex flex-col min-h-screen relative w-full">
+      {/* Main Container */}
+      <div className="content-stretch flex flex-col items-start px-4 sm:px-8 md:px-16 lg:px-[110px] relative w-full">
+        {/* Page Header */}
+        <div className="content-stretch flex flex-col sm:flex-row gap-4 sm:gap-0 items-start sm:items-center justify-between pt-6 sm:pt-8 md:pt-[32px] relative shrink-0 w-full max-w-[1220px]">
+          <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center not-italic relative shrink-0 text-[#171717] text-[24px] sm:text-[30px] whitespace-nowrap">
+            <p className="leading-[28px] sm:leading-[32px]">Providers</p>
+          </div>
+          <button
+            type="button"
+            onClick={() => navigate('/providers/new')}
+            className="bg-[#05376d] content-stretch flex gap-[6px] items-center justify-center pl-[14px] pr-[16px] py-[8px] relative rounded-[8px] shadow-[0px_0.5px_2px_0px_rgba(0,0,0,0.05)] shrink-0"
+          >
+            <div className="relative shrink-0 size-[18px]">
+              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 18 18">
+                <path clipRule="evenodd" d={svgPaths.p3ebf6d00} fill="white" fillRule="evenodd" />
+              </svg>
+            </div>
+            <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[20px] not-italic relative shrink-0 text-[14px] text-center text-white">New provider</p>
+          </button>
+        </div>
+
+        {/* Filter Bar */}
+        <div className="mt-4 sm:mt-6 md:mt-[24px] relative shrink-0 w-full max-w-[1220px]">
+          <div className="bg-white relative shrink-0 w-full">
+            <div className="border-[#e5e5e5] border-b border-solid absolute inset-0 pointer-events-none" />
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-0 size-full">
+              <div className="content-stretch flex items-center pb-3 sm:pb-[11px] pt-3 sm:pt-[10px] px-4 sm:px-6 md:px-[24px] relative w-full">
+                <div className="flex-[1_0_0] min-h-px min-w-px relative">
+                  <div className="content-stretch flex gap-[14px] items-start relative w-full">
+                    {/* Active Dropdown */}
+                    <div className="bg-white h-[38px] relative rounded-[8px] shadow-[0px_1px_3px_0px_rgba(0,0,0,0.06),0px_0px_0px_1px_#e5e5e5] shrink-0 w-full sm:w-[120px]">
+                      <div className="flex flex-row items-center overflow-clip rounded-[inherit] size-full">
+                        <div className="content-stretch flex gap-[10px] items-center px-[14px] py-[7px] relative size-full">
+                          <p className="flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[24px] min-h-px min-w-px not-italic overflow-hidden relative text-[#171717] text-[14px] text-ellipsis whitespace-nowrap">Active</p>
+                          <div className="relative shrink-0 size-[20px]">
+                            <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 20">
+                              <path clipRule="evenodd" d={svgPaths.p26e2b7f0} fill="#737373" fillRule="evenodd" />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Search Input */}
+                <div className="relative shrink-0 hidden sm:block">
+                  <div className="content-stretch flex gap-[12px] items-center justify-end relative">
+                    <div className="bg-white relative rounded-[8px] shadow-[0px_1px_3px_0px_rgba(0,0,0,0.06),0px_0px_0px_1px_#e5e5e5] shrink-0 w-[210px]">
+                      <div className="flex flex-row items-center overflow-clip rounded-[inherit] size-full">
+                        <div className="content-stretch flex gap-[10px] items-center px-[10px] py-[7px] relative w-full">
+                          <div className="relative shrink-0 size-[20px]">
+                            <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 20">
+                              <path clipRule="evenodd" d={svgPaths.p865e080} fill="#A3A3A3" fillRule="evenodd" />
+                            </svg>
+                          </div>
+                          <p className="flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[24px] min-h-px min-w-px not-italic relative text-[#a3a3a3] text-[14px] whitespace-nowrap">Company name</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Mobile Search */}
+              <div className="relative shrink-0 sm:hidden px-4 pb-3">
+                <div className="bg-white relative rounded-[8px] shadow-[0px_1px_3px_0px_rgba(0,0,0,0.06),0px_0px_0px_1px_#e5e5e5] shrink-0 w-full">
+                  <div className="flex flex-row items-center overflow-clip rounded-[inherit] size-full">
+                    <div className="content-stretch flex gap-[10px] items-center px-[10px] py-[7px] relative w-full">
+                      <div className="relative shrink-0 size-[20px]">
+                        <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 20">
+                          <path clipRule="evenodd" d={svgPaths.p865e080} fill="#A3A3A3" fillRule="evenodd" />
+                        </svg>
+                      </div>
+                      <p className="flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[24px] min-h-px min-w-px not-italic relative text-[#a3a3a3] text-[14px] whitespace-nowrap">Company name</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Cards Grid */}
+        <div className="mt-4 sm:mt-6 md:mt-[24px] relative w-full max-w-[1220px] pb-6 sm:pb-8 md:pb-[32px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 md:gap-[24px] w-full">
+            {providers.map((provider, index) => (
+              <div key={index} className="bg-white relative rounded-[12px] shadow-[0px_1px_3px_0px_rgba(0,0,0,0.06),0px_0px_0px_1px_#e5e5e5] shrink-0">
+                <div className="flex flex-col items-start overflow-clip rounded-[inherit] size-full">
+                  {/* Card Image Section */}
+                  <div className="bg-white h-[120px] overflow-clip relative shrink-0 w-full">
+                    {/* Check Circle Icon */}
+                    <div className="absolute right-[12px] size-[24px] top-[12px]">
+                      <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
+                        <path clipRule="evenodd" d={svgPaths.p1a72f800} fill="#A3A3A3" fillRule="evenodd" />
+                      </svg>
+                    </div>
+                    {/* Logo */}
+                    <div className="absolute left-1/2 size-[120px] top-1/2 -translate-x-1/2 -translate-y-1/2">
+                      <img
+                        alt=""
+                        className="absolute inset-0 max-w-none object-cover pointer-events-none size-full"
+                        src={provider.logo}
+                      />
+                    </div>
+                  </div>
+                  
+                  {/* Provider Info */}
+                  <div className="relative shrink-0 w-full">
+                    <div className="flex flex-col justify-center size-full">
+                      <div className="content-stretch flex items-center justify-start gap-[6px] pl-[16px] py-[12px] pr-[16px] relative w-full">
+                        <p className="font-['Inter:Bold',sans-serif] font-bold leading-[24px] not-italic overflow-hidden relative shrink-0 text-[#171717] text-[14px] text-ellipsis whitespace-nowrap flex-1">{provider.name}</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Actions */}
+                  <div className="flex gap-[16px] items-center px-[16px] pb-[16px]">
+                    {/* View Link */}
+                    <button className="flex gap-[6px] items-center" onClick={() => navigate(`/providers/${provider.id}`)}>
+                      <div className="relative shrink-0 size-[16px]">
+                        <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 16 16">
+                          <path d={svgPaths.p156cc700} fill="#05376D" />
+                          <path d={svgPaths.p1c6bfa00} fill="#05376D" />
+                        </svg>
+                      </div>
+                      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[20px] not-italic text-[#05376d] text-[14px]">View</p>
+                    </button>
+                    
+                    {/* Edit Link */}
+                    <button className="flex gap-[6px] items-center">
+                      <div className="relative shrink-0 size-[16px]">
+                        <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 16 16">
+                          <path d={svgPaths.p28ffe520} fill="#05376D" />
+                          <path d={svgPaths.p2b4a67f0} fill="#05376D" />
+                        </svg>
+                      </div>
+                      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[20px] not-italic text-[#05376d] text-[14px]">Edit</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Pagination */}
+          <div className="content-stretch flex flex-col sm:flex-row items-start sm:items-center justify-between mt-6 sm:mt-[24px] gap-4 relative w-full">
+            <div className="flex gap-[8px] items-center">
+              <p className="font-['Inter:Regular',sans-serif] font-normal leading-[20px] not-italic text-[#737373] text-[14px]">Showing 1 to 12 of 400 results</p>
+            </div>
+            <div className="flex gap-[8px] items-center flex-wrap">
+              <button className="bg-white content-stretch flex items-center justify-center h-[32px] w-[32px] relative rounded-[6px] shadow-[0px_1px_3px_0px_rgba(0,0,0,0.06),0px_0px_0px_1px_#e5e5e5] shrink-0">
+                <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[20px] not-italic text-[14px] text-[#171717]">1</p>
+              </button>
+              <button className="bg-white content-stretch flex items-center justify-center h-[32px] w-[32px] relative rounded-[6px] shadow-[0px_1px_3px_0px_rgba(0,0,0,0.06),0px_0px_0px_1px_#e5e5e5] shrink-0">
+                <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[20px] not-italic text-[14px] text-[#737373]">2</p>
+              </button>
+              <button className="bg-white content-stretch flex items-center justify-center h-[32px] w-[32px] relative rounded-[6px] shadow-[0px_1px_3px_0px_rgba(0,0,0,0.06),0px_0px_0px_1px_#e5e5e5] shrink-0">
+                <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[20px] not-italic text-[14px] text-[#737373]">3</p>
+              </button>
+              <button className="bg-white content-stretch flex items-center justify-center h-[32px] w-[32px] relative rounded-[6px] shadow-[0px_1px_3px_0px_rgba(0,0,0,0.06),0px_0px_0px_1px_#e5e5e5] shrink-0">
+                <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[20px] not-italic text-[14px] text-[#737373]">4</p>
+              </button>
+              <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[20px] not-italic text-[14px] text-[#737373] px-[8px] hidden sm:block">...</p>
+              <button className="bg-white content-stretch flex items-center justify-center h-[32px] w-[32px] relative rounded-[6px] shadow-[0px_1px_3px_0px_rgba(0,0,0,0.06),0px_0px_0px_1px_#e5e5e5] shrink-0 hidden sm:flex">
+                <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[20px] not-italic text-[14px] text-[#737373]">19</p>
+              </button>
+              <button className="bg-white content-stretch flex items-center justify-center h-[32px] w-[32px] relative rounded-[6px] shadow-[0px_1px_3px_0px_rgba(0,0,0,0.06),0px_0px_0px_1px_#e5e5e5] shrink-0 hidden sm:flex">
+                <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[20px] not-italic text-[14px] text-[#737373]">20</p>
+              </button>
+              <button className="bg-white content-stretch flex items-center justify-center h-[32px] w-[32px] relative rounded-[6px] shadow-[0px_1px_3px_0px_rgba(0,0,0,0.06),0px_0px_0px_1px_#e5e5e5] shrink-0">
+                <div className="relative shrink-0 size-[16px]">
+                  <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 16 16">
+                    <path d={svgPaths.p38e5e800} fill="#737373" />
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
