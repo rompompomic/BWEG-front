@@ -366,7 +366,11 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
         </div>
       </div>
 
-      <div className="flex flex-1 relative">
+      <div
+        className={`flex flex-1 relative transition-[padding] duration-300 ${
+          sidebarOpen ? 'lg:pl-[240px]' : 'lg:pl-0'
+        }`}
+      >
         {/* Desktop Sidebar */}
         <aside
           className={`hidden lg:flex bg-white flex-col shadow-[0px_4px_10px_0px_rgba(0,0,0,0.07)] fixed left-0 top-[68px] bottom-0 w-[240px] transition-transform duration-300 z-20 ${
@@ -401,14 +405,6 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
             })}
           </div>
         </aside>
-
-        {/* Sidebar Overlay */}
-        {sidebarOpen && (
-          <div
-            className="hidden lg:block fixed inset-0 bg-black/20 z-10 top-[68px]"
-            onClick={() => setSidebarOpen(false)}
-          />
-        )}
 
         {/* Mobile Menu Drawer */}
         <div
@@ -468,7 +464,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
         )}
 
         {/* Main Content */}
-        <main className="flex-1 w-full">
+        <main className="flex-1 min-w-0">
           {children ?? <Outlet />}
         </main>
       </div>
