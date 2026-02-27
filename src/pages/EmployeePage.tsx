@@ -151,7 +151,11 @@ export default function EmployersPage() {
                   Export
                 </span>
               </button>
-              <button className="bg-[#d97706] flex gap-[6px] items-center justify-center pl-[14px] pr-[16px] py-[8px] rounded-[8px] shadow-[0px_0.5px_2px_0px_rgba(0,0,0,0.05)] shrink-0">
+              <button
+                type="button"
+                onClick={() => navigate('/roles')}
+                className="bg-[#d97706] flex gap-[6px] items-center justify-center pl-[14px] pr-[16px] py-[8px] rounded-[8px] shadow-[0px_0.5px_2px_0px_rgba(0,0,0,0.05)] shrink-0"
+              >
                 {/* User Group Icon */}
                 <svg className="size-[18px] shrink-0" fill="none" viewBox="0 0 18 18">
                   <path d={svgPaths.pb0c0f80} fill="white" />
@@ -165,7 +169,11 @@ export default function EmployersPage() {
                   Roles
                 </span>
               </button>
-              <button className="bg-[#d97706] flex gap-[6px] items-center justify-center pl-[14px] pr-[16px] py-[8px] rounded-[8px] shadow-[0px_0.5px_2px_0px_rgba(0,0,0,0.05)] shrink-0">
+              <button
+                type="button"
+                onClick={() => navigate('/rights-matrix')}
+                className="bg-[#d97706] flex gap-[6px] items-center justify-center pl-[14px] pr-[16px] py-[8px] rounded-[8px] shadow-[0px_0.5px_2px_0px_rgba(0,0,0,0.05)] shrink-0"
+              >
                 {/* Shield Icon */}
                 <svg className="size-[18px] shrink-0" fill="none" viewBox="0 0 18 18">
                   <path clipRule="evenodd" d={svgPaths.p1f0c0b00} fill="white" fillRule="evenodd" />

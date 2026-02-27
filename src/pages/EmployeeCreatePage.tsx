@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import SimplePage from '@/shared/ui/simple-page/SimplePage';
 
-export default function EmployerCreatePage() {
+export default function EmployeeCreatePage() {
   const navigate = useNavigate();
 
   return (
@@ -21,4 +21,3 @@ export default function EmployerCreatePage() {
     </SimplePage>
   );
 }
-

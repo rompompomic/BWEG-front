@@ -10,6 +10,8 @@ import ClientsPage from '@/pages/ClientsPage';
 import ClientCreatePage from '@/pages/ClientCreatePage';
 import ProvidersPage from '@/pages/ProvidersPage';
 import ProviderDetailPage from '@/pages/ProviderDetailPage';
+import ProviderEditPage from '@/pages/ProviderEditPage';
+import CompaniesPage from '@/pages/CompaniesPage';
 import VehicleDetailPage from '@/pages/VehicleDetailPage';
 import VehicleEditPage from '@/pages/VehicleEditPage';
 import DriverDetailPage from '@/pages/DriverDetailPage';
@@ -25,38 +27,48 @@ import CapacityEditPage from '@/pages/CapacityEditPage';
 import InventoryCategoryAddPage from '@/pages/InventoryCategoryAddPage';
 import InventoryCategoryEditPage from '@/pages/InventoryCategoryEditPage';
 import TermsAndConditionsEditPage from '@/pages/TermsAndConditionsEditPage';
-import ProviderEditPage from '@/pages/ProviderEditPage';
-import CompaniesPage from '@/pages/CompaniesPage';
 import ServicesPage from '@/pages/ServicesPage';
-import PromoPage from '@/pages/PromoPage';
-import PromoCreatePage from '@/pages/PromoCreatePage';
-import EmployersPage from '@/pages/EmployersPage';
-import EmployerCreatePage from '@/pages/EmployerCreatePage';
-import ServiceCategoryEditPage from '@/pages/ServiceCategoryEditPage';
-import ServiceCategoryViewPage from '@/pages/ServiceCategoryViewPage';
 import ServiceRegionsPage from '@/pages/ServiceRegionsPage';
 import ServiceRegionEditPage from '@/pages/ServiceRegionEditPage';
+import ServiceCategoryEditPage from '@/pages/ServiceCategoryEditPage';
+import ServiceCategoryViewPage from '@/pages/ServiceCategoryViewPage';
+import PromoPage from '@/pages/PromoPage';
+import PromoCreatePage from '@/pages/PromoCreatePage';
+import EmployeePage from '@/pages/EmployeePage';
+import EmployeeCreatePage from '@/pages/EmployeeCreatePage';
+import EmployeeViewPage from '@/pages/EmployeeViewPage';
+import EmployeeEditPage from '@/pages/EmployeeEditPage';
+import RolesPage from '@/pages/RolesPage';
+import RightsMatrixPage from '@/pages/RightsMatrixPage';
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/login" element={<LoginPage />} />
-
         <Route path="/" element={<AdminLayout />}>
-          <Route index element={<Navigate to="/providers" replace />} />
+          <Route index element={<Navigate to="providers" replace />} />
+
           <Route path="planner" element={<PlannerPage />} />
+
           <Route path="orders" element={<OrdersPage />} />
           <Route path="orders/new" element={<OrderCreatePage />} />
+
           <Route path="invoices" element={<InvoicesPage />} />
           <Route path="invoices/new" element={<InvoiceCreatePage />} />
+
           <Route path="clients" element={<ClientsPage />} />
           <Route path="clients/new" element={<ClientCreatePage />} />
+
           <Route path="providers" element={<ProvidersPage />} />
           <Route path="providers/new" element={<ProviderEditPage />} />
           <Route path="providers/:id" element={<ProviderDetailPage />} />
+          <Route path="providers/:id/edit" element={<ProviderEditPage />} />
+
           <Route path="companies" element={<CompaniesPage />} />
+          <Route path="companies/new/edit" element={<ProviderEditPage />} />
           <Route path="companies/:providerId" element={<ProviderDetailPage />} />
+          <Route path="companies/:providerId/edit" element={<ProviderEditPage />} />
           <Route path="companies/:providerId/vehicles/:vehicleId" element={<VehicleDetailPage />} />
           <Route path="companies/:providerId/vehicles/:vehicleId/edit" element={<VehicleEditPage />} />
           <Route path="companies/:providerId/drivers/:driverId" element={<DriverDetailPage />} />
@@ -72,8 +84,7 @@ export default function App() {
           <Route path="companies/:companyId/inventory-categories/add" element={<InventoryCategoryAddPage />} />
           <Route path="companies/:companyId/inventory-categories/:categoryId/edit" element={<InventoryCategoryEditPage />} />
           <Route path="companies/:companyId/terms-and-conditions/edit" element={<TermsAndConditionsEditPage />} />
-          <Route path="providers/:id/edit" element={<ProviderEditPage />} />
-          <Route path="companies/:providerId/edit" element={<ProviderEditPage />} />
+
           <Route path="services" element={<ServicesPage />} />
           <Route path="services/regions" element={<ServiceRegionsPage />} />
           <Route path="services/regions/new" element={<ServiceRegionEditPage />} />
@@ -81,10 +92,20 @@ export default function App() {
           <Route path="services/new" element={<ServiceCategoryEditPage />} />
           <Route path="services/:id" element={<ServiceCategoryViewPage />} />
           <Route path="services/:id/edit" element={<ServiceCategoryEditPage />} />
+
           <Route path="promo" element={<PromoPage />} />
           <Route path="promo/new" element={<PromoCreatePage />} />
-          <Route path="employers" element={<EmployersPage />} />
-          <Route path="employers/new" element={<EmployerCreatePage />} />
+
+          <Route path="employers" element={<EmployeePage />} />
+          <Route path="employers/new" element={<EmployeeCreatePage />} />
+          <Route path="employers/:id" element={<EmployeeViewPage />} />
+          <Route path="employers/:id/edit" element={<EmployeeEditPage />} />
+
+          <Route path="roles" element={<RolesPage />} />
+          <Route path="employers/roles" element={<RolesPage />} />
+          <Route path="rights-matrix" element={<RightsMatrixPage />} />
+
+          <Route path="*" element={<Navigate to="/providers" replace />} />
         </Route>
       </Routes>
     </BrowserRouter>
