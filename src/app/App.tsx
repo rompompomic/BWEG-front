@@ -17,8 +17,6 @@ import VehicleEditPage from '@/pages/VehicleEditPage';
 import DriverDetailPage from '@/pages/DriverDetailPage';
 import DriverEditPage from '@/pages/DriverEditPage';
 import InventoryEditPage from '@/pages/InventoryEditPage';
-import ServiceAreaDetailPage from '@/pages/ServiceAreaDetailPage';
-import ServiceAreaEditPage from '@/pages/ServiceAreaEditPage';
 import WorkingHoursEditPage from '@/pages/WorkingHoursEditPage';
 import DestinationViewPage from '@/pages/DestinationViewPage';
 import DestinationEditPage from '@/pages/DestinationEditPage';
@@ -28,10 +26,8 @@ import InventoryCategoryAddPage from '@/pages/InventoryCategoryAddPage';
 import InventoryCategoryEditPage from '@/pages/InventoryCategoryEditPage';
 import TermsAndConditionsEditPage from '@/pages/TermsAndConditionsEditPage';
 import ServicesPage from '@/pages/ServicesPage';
-import ServiceRegionsPage from '@/pages/ServiceRegionsPage';
-import ServiceRegionEditPage from '@/pages/ServiceRegionEditPage';
-import ServiceCategoryEditPage from '@/pages/ServiceCategoryEditPage';
-import ServiceCategoryViewPage from '@/pages/ServiceCategoryViewPage';
+import ServiceViewPage from '@/pages/ServiceViewPage';
+import ServiceEditPage from '@/pages/ServiceEditPage';
 import PromoPage from '@/pages/PromoPage';
 import PromoCreatePage from '@/pages/PromoCreatePage';
 import EmployeePage from '@/pages/EmployeePage';
@@ -74,8 +70,6 @@ export default function App() {
           <Route path="companies/:providerId/drivers/:driverId" element={<DriverDetailPage />} />
           <Route path="companies/:providerId/drivers/:driverId/edit" element={<DriverEditPage />} />
           <Route path="companies/:providerId/inventory/:inventoryId/edit" element={<InventoryEditPage />} />
-          <Route path="companies/:providerId/service-area/:areaId" element={<ServiceAreaDetailPage />} />
-          <Route path="companies/:providerId/service-area/:areaId/edit" element={<ServiceAreaEditPage />} />
           <Route path="companies/:providerId/working-hours/edit" element={<WorkingHoursEditPage />} />
           <Route path="companies/:providerId/destinations/:destinationId" element={<DestinationViewPage />} />
           <Route path="companies/:providerId/destinations/:destinationId/edit" element={<DestinationEditPage />} />
@@ -86,12 +80,9 @@ export default function App() {
           <Route path="companies/:companyId/terms-and-conditions/edit" element={<TermsAndConditionsEditPage />} />
 
           <Route path="services" element={<ServicesPage />} />
-          <Route path="services/regions" element={<ServiceRegionsPage />} />
-          <Route path="services/regions/new" element={<ServiceRegionEditPage />} />
-          <Route path="services/regions/:id/edit" element={<ServiceRegionEditPage />} />
-          <Route path="services/new" element={<ServiceCategoryEditPage />} />
-          <Route path="services/:id" element={<ServiceCategoryViewPage />} />
-          <Route path="services/:id/edit" element={<ServiceCategoryEditPage />} />
+          <Route path="services/new" element={<ServiceEditPage />} />
+          <Route path="services/:id" element={<ServiceViewPage />} />
+          <Route path="services/:id/edit" element={<ServiceEditPage />} />
 
           <Route path="promo" element={<PromoPage />} />
           <Route path="promo/new" element={<PromoCreatePage />} />
